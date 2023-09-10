@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+ 
+<head>
+  <meta charset="utf-8">
+  <title>Login</title>
+</head>
+ 
+<body>
+    <h2>Login </h2>
+    <label>Account</label><br>
+  <input id="user"><br>
+  <label>Password</label><br>
+  <input id="password"><br><br>
+  <button onclick="myFunction()">Login</button>
+</body>
+<script>
+  function myFunction() {
+    if (document.getElementById("user").value == "admin") {
+      if (document.getElementById("password").value == "123123") {
+        alert("Success");
+      }
+      else {
+        alert("Wrong");
+      }
+    }
+    else {
+      alert("WRONG");
+    }
+  }
+</script>
+ 
+</html>
